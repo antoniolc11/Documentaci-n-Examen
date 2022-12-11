@@ -1,0 +1,20 @@
+<?php session_start() ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <?php require_once '../src/auxiliar.php'; ?>
+
+
+    <?php require '../src/_menu.php' ?>
+
+
+    <script src="js/flowbite/flowbite.js"></script>
+</body>
+</html>

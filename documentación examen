@@ -1,0 +1,47 @@
+PRIMER PASO DESPUES DE CLONAR:
+
+npm install -D tailwindcss
+composer_install
+
+SEGUNDO PASO:
+
+crear el codigo de la base de datos en el proyecto.
+
+TERCER PASO:
+
+-Crear usuario			sudo -u postgres createuser -P alumnos 
+-Crear base de datos		sudo -u postgres createdb -O alumnos alumnos
+
+-Insertar base de datos		psql -h localhost -U alumnos -d alumnos < src/alumnos.sql
+
+-Meter registros en la base de datos con la extensión database.
+
+CUARTO PASO
+
+Empezar crud creando una clase y su index.
+
+.......
+
+
+NOTACIONES:
+
+CREAR TRANSACCIÓN
+
+$pdo->beginTransaction();
+$pdo->exec('LOCK TABLE departamentos IN SHARE MODE');
+
+$pdo->commit();
+
+
+PINTAR DATOS EN EUROS:
+
+$nf = new NumberFormatter('es_ES', NumberFormatter::CURRENCY);
+$nf->format($fila['salario'])
+
+
+PINTAR DATOS DE UNA FECHA:
+
+const FMT_FECHA = 'Y-m-d H:i:s';
+$fecha = DateTime::createFromFormat(FMT_FECHA, "1982-07-05 00:00:00", new DateTimeZone('Europe/Madrid'));
+$fecha->format('d-m-Y');
+
