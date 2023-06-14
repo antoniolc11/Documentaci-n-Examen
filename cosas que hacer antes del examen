@@ -1,0 +1,17 @@
+EXAMEN 19/06/2023
+
+- Borrar la base de datos tienda: 			sudo -u postgres dropdb tienda
+- Crear la base de datos tienda.			sudo -u postgres createdb -O tienda tienda
+- Clonar la tienda desde 0 para el nuevo examen		git clone https://github.com/ricpelo/tienda2223.git
+- Meter los registros de tienda				psql -h localhost -U tienda -d tienda < tienda.sql
+
+Introducir los siguientes comandos:
+
+npm install
+composer install					(si da error ejecurar: composer update)
+
+
+ABRIR LA APLICACIÓN:
+
+npm run watch
+php -S localhost:8080
