@@ -1,4 +1,5 @@
 PRIMER PASO DESPUES DE CLONAR:
+npm run watch
 
 npm install -D tailwindcss
 composer_install
@@ -9,10 +10,11 @@ crear el codigo de la base de datos en el proyecto.
 
 TERCER PASO:
 
--Crear usuario			sudo -u postgres createuser -P alumnos 
--Crear base de datos		sudo -u postgres createdb -O alumnos alumnos
+sudo -u postgres dropdb nom_db	Borrar base de datos.
+-Crear usuario			sudo -u postgres createuser -P tienda 
+-Crear base de datos		sudo -u postgres createdb -O tienda tienda
 
--Insertar base de datos		psql -h localhost -U alumnos -d alumnos < src/alumnos.sql
+-Insertar base de datos		psql -h localhost -U tienda -d tienda < src/tienda.sql
 
 -Meter registros en la base de datos con la extensión database.
 
